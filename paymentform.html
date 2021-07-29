@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <style>
+        *{
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 20px, 40px;
+  font-size: 20px;
+  padding: 50px;  
+}
+.container {
+    background-color: rgb(221, 221, 218);
+    padding: 20px;
+    border: blanchedalmond;
+    border-radius: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select, 
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px, solid, rgb(221, 220, 218);
+        border-radius: 5px;
+        margin: 10px;
+}
+fieldset{
+    background-color: rgb(199, 196, 193);
+    border: 1px, solid, rgb(199, 198, 196);
+}
+h1{
+    text-align: center;
+}
+input[type="submit"]{
+    background-color: rgb(31, 231, 24);
+    color: black;
+    padding: 12px, 20px;
+    cursor: pointer;
+    width: 100%;
+    height: 30%;
+    
+}
+input[type="submit"]:hover{
+    background-color: brown;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="care%20dog.html">Home</a>
+    </nav>
+    <div class="container">
+   <form action="" method="get">
+       <h1>Payment Form</h1>
+       <hr>
+       <h2>User information</h2>
+       <p>Name: * <input type="text" name="name" placeholder="shri Ram" required></p>
+       <fieldset>
+           <legend>Gender*</legend>
+           <p>Male: <input type="radio" name="gender"> Female: <input type="radio" name="gender"></p>
+       </fieldset>
+           <p>Address: <textarea placeholder="Enter Your Address" name="address" id="address" cols="30" rows="6"></textarea></p>
+            <p>Email: * <input type="email" name="email" id="email" placeholder="Email is required"></p>
+            <p>pincode: <input type="number" name="pincode" id="pincode" placeholder="Enter your pincode"></p>
+            <h2>Payment Information</h2>
+            <p>Card Type: 
+                <select name="card type" id="card type">
+                    <option value="">__select a card__</option>
+                    <option value="visa">visa</option>
+                    <option value="rupay">rupay</option>
+                    <option value="master card">master card</option>
+                </select>
+                
+            </p>
+            <p>
+                Card Number * <input type="number" name="card_number" id="card_number" placeholder="Enter Your Card Number">
+            </p>
+            <p>
+                Expiration Date: * <input type="date" name="exp_date" id="exp_date">
+            </p>
+            <p>
+                CVV * <input type="password" name="cvv" id="cvv" placeholder="Enter Your CVV">
+            </p>
+            <input type="submit" value="pay now">
+
+   </form> 
+</body>
+</html>

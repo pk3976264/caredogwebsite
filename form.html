@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        list-style: none;
+    }
+
+    header{
+        padding: 2px;
+        text-align: center;
+        background-color: coral;
+        font-size: 20px;
+    }
+    body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 20px 30px;
+        font-size: 30px;
+        padding: 30px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="address"],
+    select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        input[type="submit"]{
+         background-color: rgb(31, 231, 24);
+         color: black;
+         padding: 12px, 20px;
+         cursor: pointer;
+         width: 100%;
+         height: 30%;
+        }
+        input[type="submit"]:hover{
+         background-color: rgb(228, 112, 112);
+        }
+</style>
+<body>
+    <nav>
+        <a href="care%20dog.html">Home</a>
+    </nav>
+    <header>
+        <h1>Form</h1>
+    </header>
+    <section>
+        <p>Name:* <input type="Name" placeholder="Saurav kumar"></p>
+        <fieldset>
+            <legend>Contact Me By</legend>
+            <p>Email: <input type="radio" name="email" id="email">Phone: <input type="radio" name="phone" id="phone"></p>
+            </fieldset>
+            <p>Email* <input type="email" name="email" id="email" placeholder="Email is Required"></p>
+            <p>Phone No* <input type="number" name="phone no" id="phone no"></p>
+            <p>Address: <textarea placeholder="Enter Your Address" name="address" id="address" cols="30" rows="6"></textarea></p>
+    </section>
+    <section>
+        <input type="submit" value="Submit">
+    </section>
+
+</body>
+</html>
